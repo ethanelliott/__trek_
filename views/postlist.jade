@@ -1,0 +1,32 @@
+extends layout
+
+block content
+	#content-card
+		p.heading #{title}
+		table
+			thead
+				tr
+					td ID
+					td Driver
+					td Start (School)
+					td End (City)
+					td Date of Travel
+					td Cost
+					td Filled Seats
+					td Available Seats
+					td Description
+					td Delete
+					
+			each post, i in postlist
+				tr
+					td #{i}
+					td #{post.driver}
+					td #{post.start}
+					td #{post.end}
+					td #{post.date}
+					td #{post.cost}
+					td #{post.filled}
+					td #{post.available}
+					td #{post.description}
+					td
+						a(href="/removepost/#{post._id}") Delete

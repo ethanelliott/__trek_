@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	#content-card
+		p.heading #{title}
+		table
+			thead
+				tr
+					td School
+					td Campus
+					td Address
+					td City
+					td Province
+					td Country
+					td Postal
+			each school, i in schoollist
+				each campus, j in school.campus
+					tr
+						td #{school.School} 
+						td #{campus.name}
+						td #{campus.location.Address} 
+						td #{campus.location.City} 
+						td #{campus.location.Province} 
+						td #{campus.location.Country} 
+						td #{campus.location.Postal} 

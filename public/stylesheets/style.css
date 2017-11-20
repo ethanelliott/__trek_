@@ -1,0 +1,414 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,400italic,500,700,900,500italic,300italic,900italic,700italic,100italic);
+
+@font-face {
+    font-family: headerFont;
+    src: url(/stylesheets/font.ttf);
+}
+
+* {
+	font-family: 'Roboto', sans-serif;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+body::-webkit-scrollbar {
+    width: 1vw;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+body {
+	background:#f2f2f2;
+}
+
+table
+{
+	width:100%;
+	border-collapse: collapse;
+	
+}
+thead
+{
+	text-align:center;
+}
+
+td 
+{
+	padding: 10px;
+	border: 1px solid black;
+}
+
+#map {
+	transition: all 0s;
+}
+
+#map > *
+{
+	transition:none !important;
+}
+
+input[type=text], select, input[type=password], input[type=number]{
+    width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size:2vh;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	padding-left:1vh;
+}
+
+textarea {
+	width: 100%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-size:2vh;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	padding-left:1vh;
+	resize: none;
+}
+
+input[type=checkbox]
+{
+	transform: scale(2);
+}
+
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#btnSubmit
+{
+	float:right;
+	padding:1vh;
+	font-size:2.7vh;
+}
+
+h3.error {
+	color:red;
+}
+
+#header {
+	width:100%;
+	height:10vh;
+	background:#43A047;
+	color:#FFFFFF;
+	position:fixed;
+	top:0;
+	left:300;
+	box-shadow: 0px 1px 15px #111;
+	z-index:5;
+}
+
+#header > span {
+	display:inline-block;
+	vertical-align:middle;
+}
+#header > span > *{
+	vertical-align:middle;
+}
+
+#header  #menu-tab {
+	height:6vh;
+	margin-left:1vw;
+	margin-right:1vw;
+}
+
+#user {
+	float:right;
+	line-height:10vh;
+}
+
+#main-icon {
+	height:8vh;
+	margin-left:2vw;
+	margin-right:0vw;
+	vertical-align:middle;
+}
+
+#header  h1 {
+	font-family:headerFont;
+	color:#ffffff;
+	height:100%;
+	font-weight:500;
+	font-size:8vh;
+	line-height:10vh;
+	display:inline-block;
+	margin-left:0vw;
+	vertical-align:middle;
+}
+
+#slide-menu-container {
+	position:fixed;
+	left:-300px;
+	top:0;
+	z-index:5;
+	width:60vw;
+	max-width:300px;
+	height:100%;
+	background:#2f7132;
+	box-shadow: 0px 1px 15px #111;
+	
+}
+
+#slide-menu-content {
+	width:100%;
+}
+
+#menu-title {
+	color:#FFFFFF;
+	font-weight:300;
+	font-size:40px;
+	margin-left:2vh;
+}
+
+#menu {
+	list-style-type:none;
+	width:100%;
+	margin-top:4vh;
+	text-align:left;
+	text-decoration:none;
+}
+
+#menu > li {
+	/*border-top:1px solid #888888;
+	border-bottom:1px solid #888888;*/
+	
+}
+
+#menu img {
+	display:inline-block;
+	height:4vh;
+	margin-left:0vh;
+	margin-right:2vh;
+}
+
+#menu a{
+	text-decoration:none;
+	display:block;
+	color:#FFFFFF;
+	font-size:24px;
+	line-height:50px;
+	margin-left:50px;
+	font-weight:200;
+}
+
+#menu-copyright {
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	text-align:left;
+	margin-left:4vw;
+	margin-bottom:2vh;
+	color:#FFFFFF;
+	font-weight:200;
+}
+
+#main-content-body-container {
+	background:#f2f2f2;
+	margin:4vh 4vw;
+	margin-top:12vh;
+	margin-bottom: 0;
+	height:100%;
+}
+
+
+#content-title {
+	font-size:3.5vh;
+	font-weight:300;
+}
+
+#content-card {
+	background:#FFFFFF;
+	border:1px solid #EEEEEE;
+	border-radius:0.5vh;
+	box-shadow: 0px 0px 10px #AAAAAA;
+	margin: 4vh auto;
+	padding: 2vh 2vw;
+	max-width:1000px;
+	overflow: auto;
+}
+
+#content-card > .feedCost
+{
+	float:right;
+	display:inline;
+	font-size:4vh;
+}
+
+#content-card > .title {
+	width:100%;
+	font-size:4vh;
+	text-align:center;
+	font-weight:500;
+	margin-bottom:10px;
+}
+#content-card > .heading {
+	width:100%;
+	font-size:4vh;
+	text-align:left;
+	font-weight:300;
+	margin-bottom:10px;
+}
+#content-card > .subheading {
+	width:100%;
+	font-size:3vh;
+	text-align:left;
+	font-weight:300;
+	margin-bottom:10px;
+	font-style:oblique;
+}
+#content-card > .text {
+	width:100%;
+	font-size:2.7vh;
+	text-align:left;
+	font-weight:300;
+	margin-bottom:10px;
+}
+
+#addUserForm {
+	border:0px; 
+	width:100%; 
+	max-width:800px;
+	margin:auto;
+}
+#loginForm {
+	border:0px; 
+	width:100%; 
+	max-width:700px;
+	margin:auto;
+}
+
+#bottom-button {
+	position:fixed;
+	right:0;
+	bottom:0;
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	margin-bottom:3vh;
+	margin-right:3vw;
+	background:#d23f31;
+	box-shadow: 0px 0px 15px #999999;
+	z-index:8;
+}
+
+#bottom-button:hover {
+	box-shadow: 0px 5px 15px #000000;
+}
+
+#footer-color-bar {
+	background:#43A047;
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:1vh;
+	z-index:8;
+}
+
+
+@media only screen and (max-width: 470px) {  
+	#header  h1 {
+		font-size:9vh;
+	}
+}
+
+.ui-timepicker-wrapper {
+	overflow-y: auto;
+	height: 150px;
+	width: 6.5em;
+	background: #fff;
+	border: 1px solid #ddd;
+	-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	outline: none;
+	z-index: 10001;
+	margin: 0;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration {
+	width: 13em;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+	width: 11em;
+}
+
+.ui-timepicker-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ui-timepicker-duration {
+	margin-left: 5px; color: #888;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-duration {
+	color: #888;
+}
+
+.ui-timepicker-list li {
+	padding: 3px 0 3px 5px;
+	cursor: pointer;
+	white-space: nowrap;
+	color: #000;
+	list-style: none;
+	margin: 0;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-selected {
+	background: #fff; color: #000;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+	background: #1980EC; color: #fff;
+}
+
+li.ui-timepicker-selected .ui-timepicker-duration,
+.ui-timepicker-list li:hover .ui-timepicker-duration {
+	color: #ccc;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled,
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+	color: #888;
+	cursor: default;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+	background: #f2f2f2;
+}

@@ -1,0 +1,197 @@
+[
+ {
+   "School": "McMaster University",
+   "NameForShort": "McMaster",
+   "TYPE": "U",
+   "SHORT": "MCMAU",
+   "City": "Hamilton",
+   "Province": "ON",
+   "Country": "CAN",
+   "ID": "CANONMCMAU",
+   "Phone":"9055259140",
+   "campus": [
+     {
+       "name": "Main",
+       "location": {
+         "Address": "1280 Main St W",
+         "City": "Hamilton",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"L8S 4L8"
+       }
+     },
+     {
+       "name": "DeGroote School of Business",
+       "location": {
+         "Address": "4350 South Service Road",
+         "City": "Burlington",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"L7L 5R8"
+       }
+     }
+   ]
+ },
+ {
+   "School": "Queen's University",
+   "NameForShort": "Queen's",
+   "TYPE": "U",
+   "SHORT": "QUEEU",
+   "City": "Kingston",
+   "Province": "ON",
+   "Country": "CAN",
+   "ID": "CANONQUEEU",
+   "Phone":"6135336000",
+   "campus": [
+     {
+       "name": "Main",
+       "location": {
+         "Address": "99 University Ave",
+         "City": "Kingston",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"K7L 3N6"
+       }
+     },
+     {
+       "name": "West",
+       "location": {
+         "Address": "535 Union St W",
+         "City": "Kingston",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"K7M 2H3"
+       }
+     },
+     {
+       "name": "The Isabel",
+       "location": {
+         "Address": "390 King St W",
+         "City": "Kingston",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"K7L 2X4"
+       }
+     }
+   ]
+ },
+ {
+   "School": "University of Waterloo",
+   "NameForShort": "Waterloo",
+   "TYPE": "U",
+   "SHORT": "WATEU",
+   "City": "Waterloo",
+   "Province": "ON",
+   "Country": "CAN",
+   "ID": "CANONWATEU",
+   "Phone":"5198884567",
+   "campus": [
+     {
+       "name": "Main",
+       "location": {
+         "Address": "200 University Ave W",
+         "City": "Waterloo",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N2L 3G1"
+       }
+     },
+     {
+       "name": "School of Architecture",
+       "location": {
+         "Address": "7 Melville St S",
+         "City": "Cambridge",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N1S 2H4"
+       }
+     },
+     {
+       "name": "School of Pharmacy",
+       "location": {
+         "Address": "10 Victoria St S A",
+         "City": "Kitchener",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N2G 1C5"
+       }
+     },
+     {
+       "name": "Stratford",
+       "location": {
+         "Address": "125 St Patrick St,",
+         "City": "Stratford",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N5A 0C1"
+       }
+     }
+   ]
+ },
+ {
+   "School": "Western University",
+   "NameForShort": "Western",
+   "TYPE": "U",
+   "SHORT": "WESTU",
+   "City": "London",
+   "Province": "ON",
+   "Country": "CAN",
+   "ID": "CANONWESTU",
+   "Phone":"5196612111",
+   "campus": [
+     {
+       "name": "Main",
+       "location": {
+         "Address": "1151 Richmond St",
+         "City": "London",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N6A 3K7"
+       }
+     }
+   ]
+ },
+ {
+   "School": "Wilfrid Laurier University",
+   "NameForShort": "Laurier",
+   "TYPE": "U",
+   "SHORT": "WILFU",
+   "City": "Waterloo",
+   "Province": "ON",
+   "Country": "CAN",
+   "ID": "CANONWILFU",
+   "Phone":"5198841970",
+   "campus": [
+     {
+       "name": "Main",
+       "location": {
+         "Address": "75 University Ave W",
+         "City": "Waterloo",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N2L 3C5"
+       }
+     },
+     {
+       "name": "Brantford",
+       "location": {
+         "Address": "73 George St",
+         "City": "Brantford",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"N3T 2Y3"
+       }
+     },
+     {
+       "name": "Toronto",
+       "location": {
+         "Address": "130 King St W",
+         "City": "Toronto",
+         "Province": "ON",
+         "Country":"CAN",
+         "Postal":"M5X 1C9"
+       }
+     },
+   ]
+ }
+]

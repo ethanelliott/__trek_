@@ -1,0 +1,46 @@
+doctype html
+html
+	head
+		title TREK | #{title}
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		meta(name="theme-color" content="#0059B3")
+		script(src='//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js')
+		script(src='//maps.googleapis.com/maps/api/js?key=AIzaSyBFmrXNbDwfGPejOzThc0VMRZFz-KpCxlU&sensor=false&libraries=places')
+		script(src='/javascripts/jquery.geocomplete.min.js')
+		script(src='/javascripts/jquery.timepicker.min.js')
+		script(src='/javascripts/gmap3.min.js')
+		script(src='/javascripts/numeral.min.js')
+		script(src='//code.jquery.com/ui/1.12.1/jquery-ui.js')
+		script(src='/javascripts/js.js')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+		
+	body(onload='menuToggle(false);')
+		#slide-menu-container
+			#slide-menu-content
+				span#menu-title Menu
+				ul#menu
+					li
+						a(href="/") Home
+						a(href="/login") Login
+						a(href="/userlist") User List
+						a(href="/schoollist") School List
+						a(href="/newuser") New User
+						a(href="/newpost") New Post
+						a(href="/feed") Feed
+				span#menu-copyright &copy; TechnoTrek Inc. 2016
+					
+		#header
+			span
+				img#menu-tab(src='/images/menu.png', onmousedown='menuToggle();')
+			a(href="/")
+				span
+					img#main-icon(src='/images/nav.png')
+				span
+					h1 TREK
+			
+		#main-content-body-container(onmousedown='menuToggle(false);')
+			block content
+		#footer-color-bar
+				

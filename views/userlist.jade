@@ -1,0 +1,24 @@
+extends layout
+
+block content
+	#content-card
+		p.heading #{title}
+		a(href="/newuser") Add new user
+		table
+			thead
+				tr
+					td ID
+					td Name
+					td Username
+					td Email
+					td School
+					td Remove
+			each user, i in userlist
+				tr
+					td #{user._id}
+					td #{user.fname} #{user.lname}
+					td #{user.username}
+					td #{user.email}
+					td #{user.school}
+					td
+						a(href="/removeuser/#{user._id}") Delete

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+	#content-card
+		p.heading #{title}
+		h3.error #{error}
+		form#formLogin(name="Ulogin",method="post",action="/Ulogin")
+			table#loginForm
+				tr
+					td(style="border:0px;") Username:
+					td(style="border:0px;")
+						input#inputUserFirstName(type="text", name="uusername", style="width:100%",data-validation="required")
+				tr
+					td(style="border:0px;") Password:
+					td(style="border:0px;")
+						input#inputUserLastName(type="password", name="upassword", style="width:100%",data-validation="required")
+				tr
+					td(colspan="2",style="border:0px;")
+						input#btnSubmit(type="submit", value="Login")

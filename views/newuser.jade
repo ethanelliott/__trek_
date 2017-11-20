@@ -1,0 +1,47 @@
+extends layout
+
+block content
+	#content-card
+		p.heading #{title}
+		h3.error #{error}
+		h3.error#error
+		form#formAddUser(name="adduser",method="post",action="/adduser")
+			table#addUserForm
+				tr
+					td(style="border:0px;") First Name:
+					td(style="border:0px;")
+						input#inputUserFirstName(type="text", placeholder="", name="firstname", style="width:100%",data-validation="length alphanumeric escape required",data-validation-length="2-30", data-validation-error-msg="Please enter a valid First name") 
+				tr
+					td(style="border:0px;") Last Name:
+					td(style="border:0px;")
+						input#inputUserLastName(type="text", placeholder="", name="lastname", style="width:100%",data-validation="length alphanumeric escape required",data-validation-length="2-30", data-validation-error-msg="Please enter a valid Last name")
+				tr
+					td(style="border:0px;") Username:
+					td(style="border:0px;")
+						input#inputUserName(type="text", placeholder="", name="username", style="width:100%",data-validation="length alphanumeric escape server required",data-validation-length="3-20",data-validation-allowing="_",data-validation-error-msg="Between 3-20 chars, only alphanumeric characters and underscores",data-validation-url="/validateusername")
+				tr
+					td(style="border:0px;") Email:
+					td(style="border:0px;")
+						input#inputUserEmail(type="text", placeholder="", name="useremail", style="width:100%",data-validation="email required")
+				tr
+					td(style="border:0px;") School:
+					td(style="border:0px;")
+						select#userSchool(name="userschool", style="width:100%", data-validation="required",data-validation-error-msg="Please select a school")
+							option(value="") 
+							each school, i in schools
+								option(value="#{school.ID}") #{school.School}
+				tr
+					td(style="border:0px;") Password:
+					td(style="border:0px;")
+						input#inputUserPassword(type="password", placeholder="", name="userpassword_confirmation", style="width:100%",data-validation="strength length required",data-validation-strength="2",data-validation-length="min8")
+				tr
+					td(style="border:0px;") Confirm Password:
+					td(style="border:0px;")
+						input#inputUserPasswordConfirm(type="password", placeholder="", name="userpassword", style="width:100%",data-validation="confirmation required")
+				tr
+					td(colspan="2",style="border:0px;")
+						input#usertos(type="checkbox", data-validation="required",data-validation-error-msg="  *  You have to agree to our terms of service") 
+						span(style="width:100%;")  I agree to the #[a(href="/terms") Terms of service]
+				tr
+					td(colspan="2",style="border:0px;")
+						input#btnSubmit(type="submit", value="Submit")
